@@ -1,0 +1,12 @@
+export MYSQL_DBPASS=mysql
+export RABBIT_PASS=rabbit
+export SERVICE_TOKEN="$(openssl rand -hex 10)"
+export KEYSTONE_DBPASS=keystone
+export ADMIN_PASS=admin
+export ADMIN_EMAIL=admin@cclub.com
+export DEMO_PASS=demo
+export DEMO_EMAIL=demo@cclub.com
+export GLANCE_DBPASS=glance
+export NOVA_DBPASS=nova
+export NETWORK_CIDR=10.21.40.1/24
+export INTERFACE_NAME=lo
