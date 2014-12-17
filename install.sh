@@ -235,6 +235,20 @@ EOF
 
 ############################################################ DASHBOARD ##############################################################
 
-#Step 27: Installing Openstack Dashboard horizon, and apache to host dashboard
+#Step 27 : Installing Openstack Dashboard horizon, and apache to host dashboard
 	apt-get install -y openstack-dashboard apache2 libapache2-mod-wsgi memcached python-memcache
+	rm -rf /etc/openstack-dashboard/local_settings.py
+	cp local_settings.py /etc/openstack-dashboard/
 
+#Step 28 : Restarting services 
+	service apache2 restart
+	service memcached restart
+
+echo "##################################################################################################################################################
+"
+echo 
+"#####                                                   openning Dashboard Component ie. Horizon                                             ####
+"
+echo "##################################################################################################################################################
+"
+	/usr/bin/firefox http://127.0.0.1/horizon
