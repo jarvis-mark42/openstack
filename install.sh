@@ -1,10 +1,6 @@
 ############################################################### INSTALLING SYSTEM #############################################################
 
-<<<<<<< HEAD
 #Step 1: Install a fresh ubuntu 14.04 Trusty Tahr
-=======
-#Step 1: Install a fresh ubuntu 14.04
->>>>>>> 186f3f3439f8b4525eaa57abe6355d378a2944f1
 
 #step 2: Change user to root user
 	sudo su
@@ -239,7 +235,6 @@ EOF
 
 ############################################################ DASHBOARD ##############################################################
 
-<<<<<<< HEAD
 #Step 27 : Installing Openstack Dashboard horizon, and apache to host dashboard
 	apt-get install -y openstack-dashboard apache2 libapache2-mod-wsgi memcached python-memcache
 	rm -rf /etc/openstack-dashboard/local_settings.py
@@ -257,8 +252,3 @@ echo
 echo "##################################################################################################################################################
 "
 	/usr/bin/firefox http://127.0.0.1/horizon
-=======
-#Step 27: Installing Openstack Dashboard horizon, and apache to host dashboard
-	apt-get install -y openstack-dashboard apache2 libapache2-mod-wsgi memcached python-memcache
-
->>>>>>> 186f3f3439f8b4525eaa57abe6355d378a2944f1
